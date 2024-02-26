@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">running</string>
+    <string name="running">
+        Running
+    </string>
+
+    <string name="km">
+        0 Km
+    </string>
+
+    <string name="time">
+        Time
+    </string>
+
+    <string name="some_id">
+        00:00
+    </string>
+
+    <string name="start">
+        START
+    </string>
+
+    <string name="finish">
+        FINISH
+    </string>
+
+    <string name="pause">
+        PAUSE
+    </string>
+
+    <string name="use_time">
+        36:09
+    </string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="restart">RESTART</string>
+
+</resources>

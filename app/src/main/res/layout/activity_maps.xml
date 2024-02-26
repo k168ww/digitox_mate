@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapsActivity">
+
+    <!-- SupportMapFragment를 감싸는 FrameLayout 추가 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!-- SupportMapFragment -->
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+
+        <!-- 기존의 다른 View들 추가 -->
+        <View
+            android:id="@+id/bg_map"
+            android:layout_width="395dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg" />
+
+        <TextView
+            android:id="@+id/running"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/running"
+            android:textAppearance="@style/running"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.42sp"
+            android:gravity="top" />
+
+        <ImageView
+            android:id="@+id/directions_"
+            android:layout_width="26.36dp"
+            android:layout_height="35.83dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="67dp"
+            android:contentDescription="@string/running"
+            app:srcCompat="@drawable/running" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="81dp"
+            android:text="@string/time"
+            android:textAppearance="@style/time"
+            android:lineSpacingExtra="5sp"
+            android:translationY="-2.46sp"
+            android:gravity="center_horizontal|top" />
+
+        <!--
+        <Chronometer
+            android:id="@+id/mapChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:format="%s"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="76dp"
+            android:gravity="right|top"
+            android:lineSpacingExtra="1sp"
+            android:textAppearance="@style/running_time"
+            android:translationY="-0.73sp"
+            tools:ignore="RtlHardcoded" />
+        -->
+        <!--
+        <TextView
+            android:id="@+id/mapChronometer"
+            android:layout_width="77dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="74dp"
+            android:text=""
+            android:textAppearance="@style/mapChronometer"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.73sp"
+            android:gravity="right|top" />
+            -->
+        <Chronometer
+            android:id="@+id/mapChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:format="%s"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="76dp"
+            android:gravity="right|top"
+            android:lineSpacingExtra="1sp"
+            android:textAppearance="@style/running_time"
+            android:translationY="-0.73sp"
+            tools:ignore="RtlHardcoded" />
+
+        <!--
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="327dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/km"
+            android:textAppearance="@style/km"
+            android:lineSpacingExtra="6sp"
+            android:translationY="-2.82sp"
+            android:gravity="center_horizontal|top" />
+            -->
+    </FrameLayout>
+</RelativeLayout>

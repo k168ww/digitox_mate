@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="207dp"
+            android:contentDescription="@string/image_description"
+            android:padding="1dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_grade" />
+    </RelativeLayout>
+
+    <!-- logo image -->
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/image_description"
+        android:background="#2EE62E"
+        android:padding="0dp"
+        android:scaleType="center"
+        android:src="@drawable/icon_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/digitoxmate"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/suit_variable"
+        android:fontWeight="700"
+        android:lineHeight="26sp"
+        android:text="Digitox Mate"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <View
+        android:layout_width="395dp"
+        android:layout_height="212dp"
+        android:background="#2EE62E"
+        android:layout_marginTop="73dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="Screen Time"
+        android:textColor="#000000"
+        android:lineHeight="20.8sp"
+        android:textSize="16sp"
+        android:textFontWeight="700"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <TextView
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="0"
+        android:textColor="#000000"
+        android:lineHeight="41.6sp"
+        android:textSize="32sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="Used 0H less than yesterday"
+        android:textColor="#000000"
+        android:lineHeight="12sp"
+        android:textSize="15.6sp"
+        android:textFontWeight="400"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="287dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="131dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="Attendance check"
+        android:textColor="#000000"
+        android:lineHeight="20.8sp"
+        android:textSize="16sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="395dp"
+        android:layout_height="187dp"
+        android:background="#282828"
+        android:layout_marginTop="394dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="Challenge"
+        android:textColor="#FFFFFF"
+        android:lineHeight="20.8sp"
+        android:textSize="16sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <View
+        android:layout_width="395dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="583dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="599dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/suit_variable"
+        android:text="Running"
+        android:textColor="#000000"
+        android:lineHeight="20.8sp"
+        android:textSize="16sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

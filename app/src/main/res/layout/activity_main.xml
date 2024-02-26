@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000">
+
+    <View
+        android:id="@+id/bg_up"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#282828"
+        />
+
+    <TextView
+        android:id="@+id/running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/running"
+        android:textAppearance="@style/running"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="900"
+        android:translationY="-0.42sp"
+        tools:ignore="UnusedAttribute" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_view"
+        android:layout_width="395dp"
+        android:layout_height="222dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/running_photo"
+            android:layout_width="395dp"
+            android:layout_height="222dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/running_photo"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/bg_running_showing"
+        android:layout_width="395dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bg_explanation"
+        />
+
+    <View
+        android:id="@+id/term_box"
+        android:layout_width="82dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@id/bg_running_showing"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/proceeding_box"
+        />
+
+    <TextView
+        android:id="@+id/up_to_1_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/term_box"
+        android:layout_alignTop="@id/term_box"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/up_to_1_week"
+        android:textAppearance="@style/up_to_1_week"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="600"
+        android:translationY="-0.31sp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/running_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@id/bg_running_showing"
+        android:layout_marginTop="48dp"
+        android:text="@string/running_title"
+        android:textAppearance="@style/running_title"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.42sp"
+        android:gravity="top"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/running_showing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@id/bg_running_showing"
+        android:layout_marginTop="77dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/running_showing"
+        android:textAppearance="@style/running_showing"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="600"
+        android:translationY="-0.31sp"
+        tools:targetApi="p" />
+
+    <View
+        android:id="@+id/bg_challenge_status"
+        android:layout_width="395dp"
+        android:layout_height="137dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="407dp"
+        android:background="@drawable/bg_challenge_status" />
+
+    <TextView
+        android:id="@+id/challenge_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="16dp"
+        android:text="@string/challenge_status"
+        android:textAppearance="@style/challenge_status"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.42sp"
+        android:gravity="top"
+        tools:targetApi="p" />
+
+    <ImageView
+        android:id="@+id/icon_groups"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="53dp"
+        android:layout_alignStart="@id/bg_challenge_status"
+        android:layout_marginStart="85dp"
+        app:srcCompat="@drawable/icon_groups"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/cumulative_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/bg_challenge_status"
+        android:layout_marginStart="37dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="85dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/cumulative_participants"
+        android:textAppearance="@style/cumulative_participants"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:translationY="-0.31sp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="105dp"
+        android:layout_alignStart="@id/bg_challenge_status"
+        android:layout_marginStart="59dp"
+        android:text="@string/people"
+        android:textAppearance="@style/people"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.31sp"
+        android:gravity="center_horizontal|top"
+        tools:targetApi="p" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="53dp"
+        android:layout_toStartOf="@id/average_target_time"
+        android:layout_marginStart="45.5dp"
+        android:layout_toEndOf="@id/cumulative_participants"
+        android:layout_marginEnd="45.5dp"
+        android:background="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/icon_alarm"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="53dp"
+        android:layout_alignEnd="@id/bg_challenge_status"
+        android:layout_marginEnd="85dp"
+        app:srcCompat="@drawable/icon_alarm"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/average_target_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/bg_challenge_status"
+        android:layout_marginEnd="47dp"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="85dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/average_target_time"
+        android:textAppearance="@style/average_target_time"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:translationY="-0.31sp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/target_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bg_challenge_status"
+        android:layout_marginTop="105dp"
+        android:layout_alignEnd="@id/bg_challenge_status"
+        android:layout_marginEnd="91dp"
+        android:text="@string/target_time"
+        android:textAppearance="@style/target_time"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.31sp"
+        android:gravity="center_horizontal|top"
+        tools:targetApi="p" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/application_box"
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="552dp"
+        android:text="@string/application"
+        android:fontFamily="@font/suit_variable"
+        android:textFontWeight="800"
+        android:background="@drawable/verify_box"
+        android:backgroundTint="#2EE62E"
+        android:contentDescription="Application 버튼"
+        tools:ignore="HardcodedText"
+        tools:targetApi="p" />
+
+</RelativeLayout>
